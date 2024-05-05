@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --ff-primary: "Young Serif", serif;
+    --ff-secondary: "Outfit", sans-serif;
+
+    --bgc-primary: #f3e5d8;
+    --bgc-secondary: #ffffff;
+
+    --bgc-accent-primary: #fff7fc;
+
+    --fc-accent-first: #a8798d;
+    --fc-accent-second: #534c46;
+    --fc-accent-third: #7a2949;
+    --fc-accent-fourth: #824530;
+
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bgc-primary);
+    padding-block: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+tr {
+    border-top: 1px solid black;
+}
+
+tr:first-child {
+    border-top: none;
+}
+
+td {
+    border: none !important;
+}
+
+main {
+    /* height: 100vh; */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.line {
+    padding-block: 5px;
+}
+
+.container {
+    padding: 25px ;
+    background-color: var(--bgc-secondary);
+    border-radius: 28px;
+}
+
+.head-img {
+    border-radius: 25px;
+}
+
+/* .content {
+   outline: 2px solid green; 
+} */
+
+.main {
+    padding-block: 20px;
+    font-family: var(--ff-secondary);
+}
+
+h1, h2 {
+    font-family: var(--ff-primary);
+    font-weight: 300;
+}
+
+h2 {
+    color: var(--fc-accent-fourth );
+}
+
+.list li::marker {
+    font-weight: 900;
+    color: var(--fc-accent-third);
+}
+
+.list li > span, .list li > p {
+    margin-left: 15px;
+    color: var(--fc-accent-second);
+}
+
+li > p {
+    padding: 5px;
+}
+
+/* ----------------- CONTENT DIVISION ----------------- */
+
+.hero-h1 {
+    color: var(--fc-accent-second);
+    padding-bottom: 10px;
+}
+
+.hero-content {
+    color: var(--fc-accent-second);
+}
+
+/* ----------------- CONTENT DIVISION ----------------- */
+
+.prep {
+    background-color: var(--bgc-accent-primary);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.prep .list {
+    margin-left: 20px;
+}
+
+.prep h3 {
+    padding-bottom: 5;
+}
+
+.prep .accent {
+    color: var(--fc-accent-third);
+}
+
+.prep .list li strong {
+    font-weight: 900;
+}
+
+/* ----------------- CONTENT DIVISION ----------------- */
+
+.ingre h2 {
+    padding-bottom: 5px;
+}
+
+.ingre .list li {
+    margin-left: 20px;
+}
+
+/* ----------------- CONTENT DIVISION ----------------- */
+
+.instruct h2 {
+    padding-bottom: 5px;
+}
+
+.instruct .list li {
+    margin-left: 20px;
+}
+
+.instruct .list li strong {
+    font-weight: 700;
+}
+
+/* ----------------- CONTENT DIVISION ----------------- */
+
+.nutri h2, .nutri p{
+    padding-bottom: 5px;
+}
+
+.tableNutr .accent {
+    color: var(--fc-accent-third);
+    font-weight: 700;
+}
+
+.tableNutr table{
+    width: 100%;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+@media (width <= 800px) {
+    body {
+        padding: 0;
+    }
+    main {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .container {
+        padding: 0;
+    }
+
+    .main {
+        padding: 25px;
+    }
+
+    .head-img {
+        border-radius: 0;
+    }
+
+
+}
